@@ -125,7 +125,7 @@ a {
 }
 
 .profile-header {
-    background-color: teal;
+    background-color: darkcyan;
 }
 
 .speech-bubble {
@@ -168,6 +168,10 @@ a {
     background-size:cover;
 }
 
+.btn:hover {
+    border: 0.2rem inset teal !important;
+}
+
 .btn, button {
     -webkit-appearance: none;
 }
@@ -199,7 +203,7 @@ a {
 }
 
 h2 {
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.2rem;
     text-transform: uppercase;
 }
 
@@ -212,7 +216,7 @@ textarea {
 }
 
 #followers {
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.2rem;
 text-transform: uppercase;
 }
 
@@ -223,21 +227,32 @@ text-transform: uppercase;
 /*comments*/
 
 .comments {
-    margin-top: 2rem !important;
+    margin-top: 4rem !important;
 }
 
+.comments .panel-heading {
+    letter-spacing: normal !important;
+}
+
+.comments-new {
+    align-items: center !important;
+}
 .comments-new .btn {
     background-color: midnightblue !important;
     border: 0.2rem outset darkcyan !important;
     border-radius: 0px !important;
-    background-image: url(https://files.catbox.moe/eb8dqt.gif);
+    background-image: url(https://files.catbox.moe/eb8dqt.gif) !important;
     background-size:cover;
     text-transform: uppercase !important;
     letter-spacing: 0.2rem !important;
 }
 
+.comments-new .btn:hover {
+    border: 0.2rem inset teal !important;
+}
+
 .comment card {
-    background-color: black !important;
+    background-color: none !important;
 }
 
 .comments {
@@ -251,16 +266,34 @@ text-transform: uppercase;
 
 .comments-posts div {
     color: white !important; /*text color */
-    background-color: #0e202b !important;
-    margin:10px !important;
+    background-color: none !important;
+    margin:4px !important;
     
 }
 
-
-
-.comment{
-    border: 3px solid #fc034e !important;
+.comment .icon-user {
+    margin-bottom: -1rem !important;
+}
+.comment hr {
+    border: none;
+    height: 1rem;
+    background-image: url(https://files.catbox.moe/ttxlth.gif);
+    background-size: cover;
+}
+.comment {
     padding:0px !important;
+    border: 2px solid black !important;
+border-left: 4px solid crimson !important;
+border-right: 4px solid crimson !important;
+    background-color: black !important;
+}
+.comments .card, .comments .card-body, .comments .fr-view {
+    padding: 0px !important;
+    background-color: black !important;
+}
+
+.comment .text-center {
+    background-color:none!important;
 }
 
 .table tbody tr td.active {
@@ -280,9 +313,10 @@ border-top: 0.2rem solid #0e202b !important;
 }
 
 .table tbody tr td.active {
-    background-color: teal !important;
+    background-color: darkcyan !important;
 }
 
+}
 .panel {
 border:none !important;
 background-color:transparent
@@ -292,18 +326,20 @@ background-color:transparent
     border: black solid 4px !important;
 }
 
+
 .panel-footer {
     background-color: black !important;
+    border: 3px solid red !important;
 }
 
+
 .profile-gallery-header .panel-heading a {
-color: white !important; /*text color */
+    color: white !important; /*text color */
     padding: 0.2rem;
     padding-left: 0.4rem;
     padding-right: 0.4rem;
     vertical-align: middle !important;
-    font-size: 1rem;
-    
+    font-size: 0.8rem;
     background-color: midnightblue !important;
     border: 0.2rem inset darkcyan !important;
     border-radius: 0px !important;
@@ -311,15 +347,19 @@ color: white !important; /*text color */
     background-size:cover !important;
 }
 
-.panel-heading, .comments h2 {
-    background-image:url(https://files.catbox.moe/5lia95.pn) !important;
-        background-image:url(https://files.catbox.moe/h3mpur.gi);
-    background-repeat:round !important;
+
+.panel-heading, .comments h2, .panel-heading h2 {
     background-color: rgba(252, 3, 78, 0.9) !important; 
-    color: black !important;
+    color: cyan !important;
     padding-top: 0.2rem !important;
     padding-bottom: 0.2rem !important;
-    font-weight: normal !important;
+    font-weight: bold !important;
+    background-color: black;
+padding: 0.5rem;
+padding-left: 0.5rem;
+letter-spacing: 0.2rem;
+text-transform: uppercase;
+font-size: 1rem;
 }
 
 .panel {
@@ -339,21 +379,7 @@ color: white !important; /*text color */
 
 
 
-.panel-heading, .comments h2 {
-background-color: black;
-background-size: contain;
-background-repeat: space;
-background-position: right !important;
-border-color:transparent !important;
-color: #05fffb !important; /*text color */
-font-size: 1.5rem !important;
-padding: 0.5rem;
-padding-left: 0.5rem;
-padding-top: 0.1rem;
-font-weight: bold !important;
-letter-spacing: 0.4rem;
-text-transform: uppercase;
-}
+
 
 
 .panel-footer .btn {
@@ -410,7 +436,7 @@ color:#fff /*text color */
 }
 
 .panel-footer {
-background: teal !important;
+ background-color: darkcyan !important;
 border:none !important
 }
 
@@ -418,14 +444,14 @@ border:none !important
 background-color: darkcyan !important;
 border-radius: 0px !important;
     margin-left: 10px; 
-    background-color: mediumturquoise !important;
-    flex-gap: none;
+    background-color: mediumturquoise !important;    
 } 
 
 /*attacks, defenses*/
 
-.profile-gallery-attack, .profile-gallery-character {
+.profile-gallery-attack, .profile-gallery-defense {
     border: none !impotant;
+        text-align: center;
 }
 
 /* glowing frames */
@@ -435,11 +461,12 @@ color: azure !important;
 }
 
 .profile-gallery-character  {
-    order: 2.8px solid rgba(15, 96, 93, 0.5) !important; /* glow lv6*/
-    ackground-color: rgba(16, 120, 116, 0.5) !important; /* glow lv4*/
+   order: 2.8px solid rgba(15, 96, 93, 1) !important; /* glow lv6*/
+background-color: rgba(16, 120, 116, 0.2) !important; /* glow lv4*/
     border-radius: 15px;
     padding: 0px !important; /* glow lv4*/
     padding-bottom: 0px !important;
+    text-align: center;
 }
 
 
@@ -453,9 +480,13 @@ border-radius: 20px !important;
     
 }
 
+
+
 .attack-thumb, .defense-thumb {
     border: none !important;
 }
+
+
 .profile-gallery-character .thumbnail {
     background-color: #16d9d1 !important; /* glow lv2*/
     padding: 2.4px !important; /* glow lv2*/
@@ -466,6 +497,17 @@ border-radius: 20px !important;
     padding: 2.5px !important; /* glow lv0*/
     background-color:white !important; /* glow lv0*/
     border-radius: 15px !important;
+    filter:none !important;
+    z-index: 6 !important;
+}
+
+
+.thumbnail-width {
+    max-width: 100% !important;
+    margin: 0px !important;
+    margin-left: 1.5rem !important;
+    margin-right: 1.5rem !important;
+    padding: 0px !important;
 }
 
 
@@ -477,7 +519,7 @@ border-radius: 20px !important;
 }
 
 .footer, footer div.contain {
-    background-color: #2f4f4f !important;
+    background-color: #0e202b !important;
 font-weight:700;
 color: #05fffb !important;
 }

@@ -297,7 +297,11 @@ border-right: 4px solid crimson !important;
 }
 
 .table tbody tr td.active {
-background:#000 !important
+background: darkcyan !important
+}
+
+.profile-header-button {
+    color: white !important;
 }
 
 .profile-links td .text-right {
@@ -328,8 +332,7 @@ background-color:transparent
 
 
 .panel-footer {
-    background-color: black !important;
-    border: 3px solid red !important;
+    background-color: darkcyan !important;
 }
 
 

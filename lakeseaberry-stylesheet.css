@@ -5,6 +5,8 @@ font-weight:700;
 color: #05fffb !important;
         background-image:url(https://files.catbox.moe/5lmlgq.gif);
         background-attachment: fixed;
+        font-family: roboto !important;
+font-family: sans-serif !important;
 }
 
 
@@ -112,9 +114,10 @@ a {
 }
 
 .profile-header-name small {
-    color: cadetblue;
-    font-family: roboto !important;
+    color: white;
     opacity: 100%;
+    letter-spacing: normal !important;
+    vertical-align: middle!important;
 }
 
 .profile-avatar-panel img {
@@ -133,7 +136,7 @@ a {
     background-color: darkslategray !important;
     color: white !important;
     margin-left: -20% !important;
-    top: 140px;
+    top: 120px;
     height:1rem;
     width: 100% !important;
     font-size: 0.5em;
@@ -147,10 +150,7 @@ a {
 
 
 
-.clearfix p {
-font-family: roboto !important;
-font-family: sans-serif !important;
-}
+
 
 .report-button {
     background-color: crimson !important;
@@ -172,20 +172,35 @@ font-family: sans-serif !important;
     -webkit-appearance: none;
 }
 
-.profile-header-button:hover {
-    background-color: azure;
-}
 
 .profile-header-buttons {
-    margin-top: 2rem;
+    margin-top: 3rem;
+}
+
+.profile-mobile-header .follows-you {
+    max-width: 50% !important;
+    text-align: center !important;
+    left: 45% !important;
+    top: 140px !important;
+}
+
+.profile-mobile-header .profile-avatar-wrapper {
+    margin-bottom: 2rem !important;
+}
+
+.profile-mobile-header .profile-header-buttons {
+    text-align: center !important;
+    margin-top: 1rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.profile-mobile-header .profile-header-buttons a {
+    margin-bottom: 0.5rem !important;
 }
 
 h2 {
     letter-spacing: 0.4rem;
     text-transform: uppercase;
-    font-family: roboto !important;
-font-family: roboto !important;
-font-family: sans-serif !important;
 }
 
 textarea {
@@ -196,21 +211,29 @@ textarea {
     background-color: transparent !important;
 }
 
-#content .panel {
-background-color: #0e202b;
-border: 4px solid black !important;
+#followers {
+    letter-spacing: 0.4rem;
+text-transform: uppercase;
 }
 
-background-image:url(&quot;https://64.media.tumblr.com/9238b3f8b978bac5fc16429235c49af0/b18aff3ce9323114-6a/s1280x1920/c59c666c62b21559b4d92929e7fc566075bd0669.gifv&quot;);max-width:100%;height:20px;background-repeat:repeat-x;background-size:contain;background-position:bottom;
-
 .profile-gallery-header {
-    background-color: red !important;
+    background-color: #fc034e !important;
 }
 
 /*comments*/
 
-.comments .btn {
-    background-color: cyan !important;
+.comments {
+    margin-top: 2rem !important;
+}
+
+.comments-new .btn {
+    background-color: midnightblue !important;
+    border: 0.2rem outset darkcyan !important;
+    border-radius: 0px !important;
+    background-image: url(https://files.catbox.moe/eb8dqt.gif);
+    background-size:cover;
+    text-transform: uppercase !important;
+    letter-spacing: 0.2rem !important;
 }
 
 .comment card {
@@ -235,37 +258,68 @@ background-image:url(&quot;https://64.media.tumblr.com/9238b3f8b978bac5fc1642923
 
 
 
+.comment{
+    border: 3px solid #fc034e !important;
+    padding:0px !important;
+}
+
 .table tbody tr td.active {
 background:#000 !important
 }
 
+.profile-links td .text-right {
+    background-color: darkcyan !important;
+}
+
 .table-bordered tbody tr td {
-border-color:#000 !important
+border-color: black !important;
+}
+
+.table-bordered tr {
+border-top: 0.2rem solid #0e202b !important;
+}
+
+.table tbody tr td.active {
+    background-color: teal !important;
 }
 
 .panel {
 border:none !important;
 background-color:transparent
+} 
+
+#content .panel {
+    border: black solid 4px !important;
 }
 
 .panel-footer {
     background-color: black !important;
 }
 
-.panel-heading a {
+.profile-gallery-header .panel-heading a {
 color: white !important; /*text color */
     padding: 0.2rem;
     padding-left: 0.4rem;
     padding-right: 0.4rem;
+    vertical-align: middle !important;
     font-size: 1rem;
+    
+    background-color: midnightblue !important;
+    border: 0.2rem inset darkcyan !important;
+    border-radius: 0px !important;
+    background-image: url(https://files.catbox.moe/eb8dqt.gif) !important;
+    background-size:cover !important;
 }
 
-.panel-heading {
+.panel-heading, .comments h2 {
     background-image:url(https://files.catbox.moe/5lia95.pn) !important;
         background-image:url(https://files.catbox.moe/h3mpur.gi);
     background-repeat:round !important;
     background-color: rgba(252, 3, 78, 0.9) !important; 
     color: black !important;
+    padding-top: 0.2rem !important;
+    padding-bottom: 0.2rem !important;
+    font-weight: normal !important;
 }
 
 .panel {
@@ -292,8 +346,6 @@ background-repeat: space;
 background-position: right !important;
 border-color:transparent !important;
 color: #05fffb !important; /*text color */
-font-family: roboto !important;
-font-family: sans-serif !important;
 font-size: 1.5rem !important;
 padding: 0.5rem;
 padding-left: 0.5rem;
@@ -316,26 +368,27 @@ text-transform: uppercase;
 background:#00c6c6!important;
 font-style: italic;
 text-transform: uppercase;
-color: !important /*text color */
 }
 
 .nav-tabs a {
-    border-left: 2px solid white!important;
     border-right: 2px solid white!important;
     border-radius: 0px !important;
-    margin: 0px !important;
+    border: cyan inset;
+    margin: 0.1rem !important;
+    text-align: center;
+    width: 100%;
 }
 
 
 .nav li.active a {
-background:#05fffb !important;
+background: #fc034e !important;
 border:#c13478 !important;
-color:#c13478 !important /*text color */
+color: cyan !important /*text color */
 }
 
 .nav li a:hover {
-background:#fff !important;
-color:#fff !important /*text color */
+background: crimson !important;
+color: teal !important /*text color */
 }
 
 .nav li a {
@@ -361,15 +414,29 @@ background: teal !important;
 border:none !important
 }
 
-.nametag {
+.profile-gallery-character div {
 background-color: darkcyan !important;
+border-radius: 0px !important;
+    margin-left: 10px; 
+    background-color: mediumturquoise !important;
+    flex-gap: none;
 } 
+
+/*attacks, defenses*/
+
+.profile-gallery-attack, .profile-gallery-character {
+    border: none !impotant;
+}
 
 /* glowing frames */
 
-.profile-gallery-attack, .profile-gallery-defense  {
-    order: 2.8px solid #0f605d !important; /* glow lv6*/
-    ackground-color:#107874 !important; /* glow lv4*/
+.profile-gallery-character a {
+color: azure !important;
+}
+
+.profile-gallery-character  {
+    order: 2.8px solid rgba(15, 96, 93, 0.5) !important; /* glow lv6*/
+    ackground-color: rgba(16, 120, 116, 0.5) !important; /* glow lv4*/
     border-radius: 15px;
     padding: 0px !important; /* glow lv4*/
     padding-bottom: 0px !important;
@@ -377,17 +444,24 @@ background-color: darkcyan !important;
 
 
 
-.attack-thumb {
- border: 2.7px solid #199e99 !important; /* glow lv3*/
+.character-thumb {
+ border: 2.7px solid rgba(25, 158, 153, 0.5) !important; /* glow lv3*/
 border-radius: 20px !important;
 }
 
-.thumbnail {
+.nametag {
+    
+}
+
+.attack-thumb, .defense-thumb {
+    border: none !important;
+}
+.profile-gallery-character .thumbnail {
     background-color: #16d9d1 !important; /* glow lv2*/
     padding: 2.4px !important; /* glow lv2*/
 }
 
-.attack-thumb img {
+.character-thumb img {
     border: 2.5px solid #00fff5 !important; /* glow lv1*/
     padding: 2.5px !important; /* glow lv0*/
     background-color:white !important; /* glow lv0*/
@@ -395,11 +469,11 @@ border-radius: 20px !important;
 }
 
 
-.nametag, .nametag a {
-    background-color: #00c6c6 !important;
-    color: white !important;
-    border-radius: 0px;
-    border: 0.2rem cyan solid;
+.nametag, .nametag a, .nametag i {
+    background-color: mediumturquoise!important;
+    color: #1f5a5a !important;
+    border-radius: 0px !important;
+    border: mediumturquoise 0.2rem solid !important;
 }
 
 .footer, footer div.contain {

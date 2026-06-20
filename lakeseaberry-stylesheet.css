@@ -107,7 +107,6 @@ a {
     border: none !important;
 }
 .profile-avatar-panel {
-    border: 4px solid #c5264c;
     padding:0px;
     margin: 10px;
 }
@@ -135,6 +134,10 @@ a {
     color: white !important;
     margin-left: -20% !important;
     top: 140px;
+    height:1rem;
+    width: 100% !important;
+    font-size: 0.5em;
+    letter-spacing: normal;
     
 }
 
@@ -146,6 +149,7 @@ a {
 
 .clearfix p {
 font-family: roboto !important;
+font-family: sans-serif !important;
 }
 
 .report-button {
@@ -180,7 +184,8 @@ h2 {
     letter-spacing: 0.4rem;
     text-transform: uppercase;
     font-family: roboto !important;
-    font-family: arial;
+font-family: roboto !important;
+font-family: sans-serif !important;
 }
 
 textarea {
@@ -219,7 +224,6 @@ background-image:url(&quot;https://64.media.tumblr.com/9238b3f8b978bac5fc1642923
 
 .icon-user {
     border-radius: 0px !important;
-    border: 5px crimson solid !important;
 }
 
 .comments-posts div {
@@ -250,8 +254,6 @@ background-color:transparent
 
 .panel-heading a {
 color: white !important; /*text color */
-    background-color: darkblue;
-    border: cyan 2px outset;
     padding: 0.2rem;
     padding-left: 0.4rem;
     padding-right: 0.4rem;
@@ -259,10 +261,11 @@ color: white !important; /*text color */
 }
 
 .panel-heading {
-    background-image:url(https://files.catbox.moe/5lia95.pn);
+    background-image:url(https://files.catbox.moe/5lia95.pn) !important;
         background-image:url(https://files.catbox.moe/h3mpur.gi);
     background-repeat:round !important;
-    background-color: rgba(213, 0, 0, 0.59) !important; 
+    background-color: rgba(252, 3, 78, 0.9) !important; 
+    color: black !important;
 }
 
 .panel {

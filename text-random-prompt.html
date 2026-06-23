@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+    .random-drawing-prompt-box {
+        width: 15rem;
+    }
+    
+.words {
+    position: relative;
+    width: 70%;
+    height: 2rem;
+    margin-top: 20px;
+    overflow: hidden;
+    border: 3px solid cyan;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.prompt {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    animation: cycle 1.25s infinite;
+}
+    
+
+
+.prompt:nth-child(1) { animation-delay: 0s; }
+.prompt:nth-child(2) { animation-delay: 0.25s; }
+.prompt:nth-child(3) { animation-delay: 0.5s; }
+.prompt:nth-child(4) { animation-delay: 0.75s; }
+.prompt:nth-child(5) { animation-delay: 1s; }
+
+@keyframes cycle {
+    0%, 19% { opacity: 1; }
+    20%, 100% { opacity: 0; }
+}
+
+#show {
+    display: none;
+}
+    
+    #show:checked ~~ label {
+        background-color: black;
+    }
+
+#show:checked ~ .words .prompt {
+    animation-play-state: paused;
+}
+
+label {
+    border: cyan 3px solid;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    padding: 1rem;
+}
+    
+</style>
+</head>
+<body>
+
+<div class="random-drawing-prompt-box">
+    <input type="checkbox" id="show">
+    <label for="show"><img src="https://files.catbox.moe/qcafka.webp">get a random attack theme</label>
+
+    <div class="words">
+        <div class="prompt">text A</div>
+        <div class="prompt">text B</div>
+        <div class="prompt">text C</div>
+        <div class="prompt">text D</div>
+        <div class="prompt">text E</div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -88,6 +88,7 @@ background-image: url(https://files.catbox.moe/zw2f86.gif) !important; /*banner 
 background-repeat:no-repeat !important;
 background-color:#000 !important;
 background-size: contain !important;
+background-position: bottom !important;
 font-weight:700
 }
 
@@ -508,9 +509,10 @@ border-radius: 20px !important;
 .thumbnail-width {
     max-width: 100% !important;
     margin: 0px !important;
-    margin-left: 1.5rem !important;
-    margin-right: 1.5rem !important;
+    margin-left: 1.3rem !important;
+    margin-right: 1.3rem !important;
     padding: 0px !important;
+    font-size: 0.8rem !important;
 }
 
 
@@ -518,7 +520,7 @@ border-radius: 20px !important;
     background-color: mediumturquoise!important;
     color: #1f5a5a !important;
     border-radius: 0px !important;
-    border: mediumturquoise 0.2rem solid !important;
+    border: none !important;
 }
 
 .footer, footer div.contain {
@@ -547,3 +549,139 @@ color: #05fffb !important;
 }
 
 
+
+/* character page only */
+.profile-header-nam {
+    background-color: #fc034e !important;
+    border: none !important;
+    border-radius: 0px !important;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4em;
+  width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+#preferences ul {
+    list-style-image: url(https://files.catbox.moe/nypbhh.gif);
+    padding: 0px;
+    text-align: left;
+}
+
+/* user profile */
+
+.profile-description .windows-panel {
+    background-color: rgba(252, 3, 78, 0.9);
+    padding: 0.2rem;
+    max-width: 50%;
+    margin: 0.5rem;
+}
+
+#user_desc_profile {
+    padding: 1.5rem;
+    background-image: url(https://files.catbox.moe/tyu4ex.gif);
+    background-repeat:round;
+}
+.windows-panel-header {
+    background-color: black;
+    background-image: url(https://files.catbox.moe/b7g9j2.gif);
+    background-image: url(https://files.catbox.moe/2cox4b.gif) ;
+    background-image: url(https://files.catbox.moe/4eaqtb.gif) !important;
+    background-size: contain;
+    height: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.windows-panel-icon {
+    padding-left: 0.5rem;
+    color: white;
+}
+
+.windows-panel-icon img {
+    padding-right: 0.5rem;
+}
+
+.windows-button {
+    background-color: aliceblue;
+    border: aliceblue outset;
+    height: 1.5rem;
+    width: 1.5rem;
+    float: right;
+    vertical-align: middle;
+    text-align:center;
+    margin-left: 0.2rem;
+    line-height: 1rem;
+    padding: 0px;
+    color: #2f4f4f;
+}
+
+.windows-panel-content {
+    background-color: whitesmoke;
+    font-weight: normal;
+    padding: 1rem;
+    color: #2f4f4f;
+}
+
+   /* RANDOM ATTACK THEME BUTTON */
+
+    .random-drawing-prompt-box {
+display: block;
+        justify-content: center;
+    }
+    
+.words {
+    position: relative;
+    height: 2rem;
+    margin: 1rem;
+    overflow: hidden;
+    border: 3px solid cyan;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    width: auto;
+    justify-content:center;
+    text-align:center;
+}
+
+.prompt {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    animation: cycle 1.25s infinite;
+}
+
+.prompt:nth-child(1) { animation-delay: 0s; }
+.prompt:nth-child(2) { animation-delay: 0.25s; }
+.prompt:nth-child(3) { animation-delay: 0.5s; }
+.prompt:nth-child(4) { animation-delay: 0.75s; }
+.prompt:nth-child(5) { animation-delay: 1s; }
+
+@keyframes cycle {
+    0%, 19% { opacity: 1; }
+    20%, 100% { opacity: 0; }
+}
+
+#show {
+    display: none;
+}
+    
+    #show:checked ~~ label {
+        background-color: black;
+    }
+
+#show:checked ~ .words .prompt {
+    animation-play-state: paused;
+}
+
+label {
+    border: cyan 3px solid;
+    background-color: rgba(252, 3, 78, 0.9);
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+    margin:1rem;
+    display: block;
+    justify-content:center;
+    text-align:center;
+}
+    /*RANDOM ATTACK THEME BUTTON - END */

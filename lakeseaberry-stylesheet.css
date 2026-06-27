@@ -24,9 +24,7 @@ font-family: sans-serif !important;
     color: paleturquoise!important;
 }
 
-.artfight-nav .navbar-brand {
-    background-image
-}
+
 
 .fas, .fa-discord {
     display:none;
@@ -398,6 +396,7 @@ font-size: 1rem;
 background:#00c6c6!important;
 font-style: italic;
 text-transform: uppercase;
+text-align: center;
 }
 
 .nav-tabs a {
@@ -531,24 +530,6 @@ color: #05fffb !important;
 
 
 /* custom profile desc */
-.profile-description {
-    border: black 0.3rem solid  !important;
-    background-color: #0e101d !important; 
-    background-size: cover;
-}
-
-.screenbck {
-    background-image: url(https://files.catbox.moe/9bvhfg.gif);
-}
-
-.desc-divider {
-    background-color: #c5265b !important;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-    text-align:center;
-}
-
-
 
 /* character page only */
 .profile-header-nam {
@@ -570,17 +551,57 @@ color: #05fffb !important;
 
 /* user profile */
 
-.profile-description .windows-panel {
+.emoji-profile {
+    max-height: 1.7rem;
+    margin:0.1rem;
+}
+
+.profile-description {
+    background-color: none !important; 
+    background-size: cover;
+}
+
+.profile-description a {
+    color:darkcyan !important;
+}
+
+.profile-links-label {
+    text-transform: uppercase;
+    font-weight:bold;
+}
+
+.screenbck {
+    background-image: url(https://files.catbox.moe/9bvhfg.gif);
+}
+
+.desc-divider {
+    background-color: #c5265b !important;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    text-align:center;
+}
+
+
+
+.windows-panel {
     background-color: rgba(252, 3, 78, 0.9);
     padding: 0.2rem;
-    max-width: 50%;
+    width:auto;
     margin: 0.5rem;
 }
 
-#user_desc_profile {
+.windows-panel, .custom-profile-image, .character-types-wrapper {
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#user-desc-profile {
     padding: 1.5rem;
+    margin-top:0px!important;
     background-image: url(https://files.catbox.moe/tyu4ex.gif);
     background-repeat:round;
+        border: #fc034e 0.5rem solid  !important;
+ 
 }
 .windows-panel-header {
     background-color: black;
@@ -588,8 +609,9 @@ color: #05fffb !important;
     background-image: url(https://files.catbox.moe/2cox4b.gif) ;
     background-image: url(https://files.catbox.moe/4eaqtb.gif) !important;
     background-size: contain;
-    height: 1.5rem;
+    height: auto;
     margin-bottom: 0.25rem;
+    vertical-align: middle !important;
 }
 
 .windows-panel-icon {
@@ -602,25 +624,103 @@ color: #05fffb !important;
 }
 
 .windows-button {
-    background-color: aliceblue;
-    border: aliceblue outset;
+    display:inline-block;
     height: 1.5rem;
     width: 1.5rem;
-    float: right;
-    vertical-align: middle;
+    vertical-align: middle !important;
     text-align:center;
-    margin-left: 0.2rem;
-    line-height: 1rem;
+    margin: 0.1rem;
     padding: 0px;
-    color: #2f4f4f;
+    background-color: rgba(220, 20, 60, 0.8);
+    border: 2px #fc034e solid;
+    color: white;
 }
 
 .windows-panel-content {
+    font-weight: bold !important;
     background-color: whitesmoke;
     font-weight: normal;
     padding: 1rem;
     color: #2f4f4f;
 }
+
+
+.chr-table td {
+    text-transform: uppercase;
+    padding: 0.3rem;
+}
+
+.chr-table tr {
+    border: 0.2rem solid cyan;
+        background-color:navy; 
+      background-image: url(https://files.catbox.moe/eb8dqt.gif);
+    background-size:contain;
+} 
+
+.chr-table {
+    text-align:center;
+    border: inset cyan 0.3rem;
+    margin-left:auto;
+    margin-right:auto
+}
+
+.chr-table-label {
+        color: cyan; 
+    transform: scaleY(160%);
+    letter-spacing: -0.04rem;
+}
+
+.character-types-window {
+    text-align:right;
+}
+
+   .profile-panel-other {background-color: rgba(252, 3, 78, 0.8);
+    padding:0.5rem;
+border:0.2rem rgba(252, 3, 78, 1.0) solid;}
+
+#graphics-window{text-align:center;}
+
+.character-types-wrapper {
+    max-width: 19em; 
+}
+
+#chr-tvhead {
+    background-image: url(https://images.artfight.net/character/th_M76lLcGy8AohRgghbeJmJ2Ufb6JUOfFZ6BJ4sUtPwGD95oO99UF2ZOYODuSO.png?t=1751278388);
+    background-size:cover;
+    background-position:bottom;
+            filter: sepia(100%) hue-rotate(130deg) saturate(150%)  contrast(100%) brightness(100%);
+}
+
+#chr-human {
+    background-image: url(https://images.artfight.net/character/th_oFCGt19z56FwoZUpBSHWIMyGqPZ6sbwAY9mhNV7pTOFbjkpJXVvpePNrsPMy.png?t=1781033805);
+        background-size:cover;
+    background-position:center;
+            filter: sepia(100%) hue-rotate(130deg) saturate(150%)  contrast(100%) brightness(100%);
+     background-position:bottom;
+}
+
+#chr-feral {
+    background-image: url(https://images.artfight.net/character/th_uyuzbAIABY4d8ykaZdyZXGi62VlfCxdkI3RseCJ6klthwUNH512oUg7pjPig.png?t=1720204234);
+        background-size:cover;
+    background-position:center;
+            filter: sepia(100%) hue-rotate(130deg) saturate(150%)  contrast(100%) brightness(100%);
+}
+
+#chr-anthro {
+    background-image: url(https://images.artfight.net/character/th_DFCcLclMFdXrf2nscUZPHQzWWARBqFdyIYcgXJstXwte2mODtL4SwVsTW5nT.png?t=1751134847);
+        background-size:cover;
+    background-position:center;
+            filter: sepia(100%) hue-rotate(130deg) saturate(150%)  contrast(100%) brightness(100%);
+}
+
+.character-type-img {
+    height: 4rem;
+    width: 6rem;
+    margin: 0.3rem;    
+}
+
+.gif-brd-top {margin-top:-0.7rem; margin-right: 0.2rem;}
+.gif-brd-bottom {margin-bottom:-0.5rem}
 
    /* RANDOM ATTACK THEME BUTTON */
 
@@ -634,10 +734,10 @@ display: block;
     height: 2rem;
     margin: 1rem;
     overflow: hidden;
-    border: 3px solid cyan;
+    border: 3px inset cyan;
+    vertical-align: middle;
     background-color: black;
-    color: white;
-    font-weight: bold;
+    color: cyan;
     width: auto;
     justify-content:center;
     text-align:center;
@@ -646,6 +746,7 @@ display: block;
 .prompt {
     position: absolute;
     width: 100%;
+    font-size:1rem;
     opacity: 0;
     animation: cycle 1.25s infinite;
 }
@@ -674,7 +775,7 @@ display: block;
 }
 
 label {
-    border: cyan 3px solid;
+    border: cyan 3px outset;
     background-color: rgba(252, 3, 78, 0.9);
     color: white;
     cursor: pointer;

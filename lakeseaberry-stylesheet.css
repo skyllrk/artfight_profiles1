@@ -10,33 +10,26 @@ font-family: sans-serif !important;
 }
 
 
-/*af navbar */
+/*artfight navbar */
 .navbar {
     background-color: #0e202b !important;
     color: cyan !important;
 }
 
-.navbar a {
-    color:  lightcyan !important;
-}
+.navbar a {color:  lightcyan !important;}
 
-.navbar-brand div {
-    color: paleturquoise!important;
-}
+.navbar-brand div {color: paleturquoise!important;}
 
-
-
-.fas, .fa-discord {
-    display:none;
-}
+.fas, .fa-discord {display:none;}
 
 .artfight-nav .navbar-brand img {
     display:none;
 }
 
 .artfight-nav .navbar-brand {
-    background-image: url(https://files.catbox.moe/2ozo8n.gif);
+    background-image: url(https://files.catbox.moe/0ab8fl.webp);
     background-repeat: no-repeat;
+    background-size:contain;
     padding-left: 38px !important;
     padding-bottom: 10px !important;
     margin-bottom: -10px !important;
@@ -52,7 +45,7 @@ font-family: sans-serif !important;
 }  /*discord icon*/
 
 .artfight-nav .navbar-nav:first-child .nav-item:first-child + .nav-item {
-    background-image: url(https://files.catbox.moe/rwrb1w.gif);
+    background-image: url(https://files.catbox.moe/2ozo8n.gif);
     padding-left: 20px;
     background-repeat: no-repeat;
     background-position: left;
@@ -551,6 +544,23 @@ color: #05fffb !important;
 
 /* user profile */
 
+#user-desc-profile {
+    padding: 1.5rem;
+    margin-top:0px!important;
+    background-image: url(https://files.catbox.moe/tyu4ex.gif);
+    background-repeat:round;
+        border: #fc034e 0.5rem solid  !important; 
+}
+
+.descwindow-stamps, .descwindow-doll, .descwindow-extra, .descwindow-info, .descwindow-artfight, .descwindow-charactertypes, .descwindow-links, .descwindow-random, .descwindow-sharks {
+    ;
+}
+
+
+.descwindow-artfight, .descwindow-links {
+    text-align:left;
+}
+
 .emoji-profile {
     max-height: 1.7rem;
     margin:0.1rem;
@@ -595,14 +605,7 @@ color: #05fffb !important;
     margin-left:auto;
 }
 
-#user-desc-profile {
-    padding: 1.5rem;
-    margin-top:0px!important;
-    background-image: url(https://files.catbox.moe/tyu4ex.gif);
-    background-repeat:round;
-        border: #fc034e 0.5rem solid  !important;
- 
-}
+
 .windows-panel-header {
     background-color: black;
     background-image: url(https://files.catbox.moe/b7g9j2.gif);
@@ -679,6 +682,10 @@ color: #05fffb !important;
 border:0.2rem rgba(252, 3, 78, 1.0) solid;}
 
 #graphics-window{text-align:center;}
+#graphics-window img {
+    width:100%;
+    }
+
 
 .character-types-wrapper {
     max-width: 19em; 

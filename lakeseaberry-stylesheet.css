@@ -617,6 +617,16 @@ color: #05fffb !important;
 
 .character-profile-panel {
     background-color:#0e202b!important;
+    padding:4px;
+
+}
+
+.character-card-footer {
+    height:2.5em!important;
+    background-color:black;
+        background-image:url(https://64.media.tumblr.com/a8836108f01dd6b5fe4b4d809c848037/d22cf726633cd8f2-ab/s2048x3072/bc1da885972e0bf11498573c725d9ae0f2d86669.pnj);
+    background-size:cover;
+    background-position:right;
 }
 
 
@@ -624,7 +634,6 @@ color: #05fffb !important;
     font-size:0.8em!important;
     font-weight:normal;
     line-height:14px;
-    
 }
 
 
@@ -654,6 +663,35 @@ color: #05fffb !important;
     
 }
 
+.info-wrapper {
+    text-transform:none!important;
+}
+.info-wrapper .card-header {
+    background-color:#fc034e!important;
+    text-transform:uppercase;
+    border-radius:0px;
+    font-weight:bold;
+}
+
+.info-wrapper .text-right {
+    background-color:black!important;
+}
+
+.permissions {
+    text-transform:none;
+}
+.permissions .card-header {
+    background-color:#fc034e!important;
+    text-transform:uppercase;
+    font-size:1.5em;
+}
+
+.permissions .permissions-subheader {
+    background-color:black!important;
+    padding:5px;
+    padding-left:10px;
+}
+
 #character-content .gallery-header, #character-content .connections-header, .tags .card-header{
     background-color:#fc034e !important;
     border-radius:0px!important;
@@ -670,13 +708,26 @@ color: #05fffb !important;
 }
 
 
-.character-divider {
+.character-description .progress {
+    background-color:black;
+    border:2px solid cyan;
+}
+
+.character-divider-inside {
     border: none!important;
-    height: 0.5rem!important;
+    height: 0.2rem!important;
     background-image: url(https://files.catbox.moe/ttxlth.gif)!important;
     background-size: cover!important;
     background-position:center;
-    margin-bottom:2rem;
+}
+
+.character-divider {
+    border:none!important;
+    height: 0.7rem!important;
+    background-color:black;
+    background-image: url(ttps://files.catbox.moe/g6sx26.gif)!important;
+    background-size:contain;
+    background-position:center;
 }
 
 
@@ -691,6 +742,7 @@ color: #05fffb !important;
     width:100%!important;
     background-color:#fc034e!important;
         padding:0.5rem!important;
+    margin-bottom:1rem;
 }
 
 .header-vincent {
@@ -700,12 +752,53 @@ color: #05fffb !important;
 }
 
 .header-vincent .h4 {
-    color:whitesmoke !important;
+
+}
+
+.extra-images-navigation {
+    display:flex;
+    flex-direction:column;
+
+        margin-left:1rem!important;
+}
+
+.extra-images-credit {
+    margin-top:0.7vw;
+    
+    font-size:0.9vw;
+    margin-bottom:0px;
+    background-color:darkcyan;
+}
+
+.extra-images-note {
+    background-color:darkcyan;
+    color:azure;
 }
 
 
+.extra-gallery {
+    display:flex;
+    background-color: black;
+}
+
+.btn-gallery {
+    padding:0;
+    margin:0.4rem;
+    border: 3px cyan outset!important;
+    background:none;
+}
+
+.color-swatch {
+    color:white!important;
+}
+    
+
 .character-color-swatches card-body {
     color:whitesmoke!important;
+}
+
+.character-profile-panel {
+    padding:1rem;
 }
 
 /* user profile */
@@ -762,7 +855,9 @@ color: #05fffb !important;
 }
 
 
-
+#extra-images-credit {
+    font-size:0.6em;
+}
 .windows-panel {
     background-color: rgba(252, 3, 78, 0.9);
     padding: 0.2rem;

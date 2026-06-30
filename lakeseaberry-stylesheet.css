@@ -602,6 +602,12 @@ color: #05fffb !important;
 }
 /* single character page */
 
+
+
+.profile-header-name i {
+    color:cyan!important;
+}
+
 .character-description {
     background-color:black !important;
     margin-left, margin-right: 0px !important;
@@ -609,6 +615,29 @@ color: #05fffb !important;
     padding:0.5rem;
 }
 
+.character-profile-panel {
+    background-color:#0e202b!important;
+}
+
+
+.character-info-card {
+    font-size:0.8em!important;
+    font-weight:normal;
+    line-height:14px;
+    
+}
+
+
+.char-inf {
+    padding: 4px!important;
+    margin-bottom:3px;
+}
+
+.character-info-card h4 {
+    color:whitesmoke!important;
+    text-align:center;
+    font-weight:bold!important;
+}
 
 #character-content .card {
     background-color: black;
@@ -651,14 +680,6 @@ color: #05fffb !important;
 }
 
 
-#preferences ul {
-    list-style-image: url(https://files.catbox.moe/nypbhh.gif);
-    padding: 0px;
-    text-align: left;
-}
-
-
-
 .character-desc-header {
     text-transform: uppercase!important;
     text-align:center;
@@ -682,10 +703,9 @@ color: #05fffb !important;
     color:whitesmoke !important;
 }
 
-.character-notes-panel {
-    padding: 0.5rem;
-    margin:1rem;
-    background-color:teal;
+
+.character-color-swatches card-body {
+    color:whitesmoke!important;
 }
 
 /* user profile */

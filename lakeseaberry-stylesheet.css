@@ -667,11 +667,13 @@ color: #05fffb !important;
     padding-bottom:0px !important;
 }
 
+/*
 #user_personality .row {
     background-color:#fc034e!important; 
     border-radius:5px!important;
     padding:5px;
-}
+} */
+
 #user_skills .mb-3 {
     margin-top:auto!important;
     padding-top:0.5rem !important;
@@ -701,12 +703,12 @@ color: #05fffb !important;
 
 
 .character-description .h-100 .card-body {
-    background-image: none!important;
+    
     background-color:transparent!important;
 }
 
 .character-description .h-100 .card .flex-column {
-    background-image: none!important;
+   
     background-color:black!important;
 }
 

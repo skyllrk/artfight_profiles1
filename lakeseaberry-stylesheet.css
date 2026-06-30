@@ -374,8 +374,16 @@ font-size: 1rem;
 }
 
 
+#profile-side-images img {
+    width:13em;
+}
 
-
+#profile-side-images {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    margin-left:4em;
+}
 
 
 .panel-footer .btn {
@@ -602,10 +610,82 @@ color: #05fffb !important;
 }
 
 
+#character-content .card {
+    background-color: black;
+    color:cyan!important;
+}
+
+#character-content .gallery-wrapper, #character-content .connections-wrapper,.permissions, #character-content .tags, #character-content .info-wrapper, info-wrapper {
+    background-color: rgba(14, 32, 43, 0.7) !important;
+    color:cyan!important;
+    font-weight:bold !important;
+    text-transform:uppercase;
+    border-radius:0px!important;
+    border:0.3rem solid black!important;
+    
+}
+
+#character-content .gallery-header, #character-content .connections-header, .tags .card-header{
+    background-color:#fc034e !important;
+    border-radius:0px!important;
+    font-weight:bold!important;
+}
+
+.connections-header a {
+    color:cyan!important;
+}
+
+
+.character-description .image-display-credit {
+    background:black!important;
+}
+
+
+.character-divider {
+    border: none!important;
+    height: 0.5rem!important;
+    background-image: url(https://files.catbox.moe/ttxlth.gif)!important;
+    background-size: cover!important;
+    background-position:center;
+    margin-bottom:2rem;
+}
+
+
 #preferences ul {
     list-style-image: url(https://files.catbox.moe/nypbhh.gif);
     padding: 0px;
     text-align: left;
+}
+
+
+
+.character-desc-header {
+    text-transform: uppercase!important;
+    text-align:center;
+    color:cyan!important;
+    font-weight:bold!important;
+}
+
+.character-desc-header-bck {
+    width:100%!important;
+    background-color:#fc034e!important;
+        padding:0.5rem!important;
+}
+
+.header-vincent {
+    background-image:url(https://files.catbox.moe/mv6eg3.gif);
+    background-size:50%;
+    background-position:bottom;
+}
+
+.header-vincent .h4 {
+    color:whitesmoke !important;
+}
+
+.character-notes-panel {
+    padding: 0.5rem;
+    margin:1rem;
+    background-color:teal;
 }
 
 /* user profile */

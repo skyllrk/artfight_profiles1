@@ -608,6 +608,10 @@ color: #05fffb !important;
     color:cyan!important;
 }
 
+.profile-header {
+    background-color: #fc034e;
+}
+
 .character-description {
     background-color:black !important;
     margin-left, margin-right: 0px !important;
@@ -721,6 +725,13 @@ color: #05fffb !important;
     background-position:center;
 }
 
+
+
+.character-personality-scales .card-body {
+    border;none!important;
+}
+
+
 .character-divider {
     border:none!important;
     height: 0.7rem!important;
@@ -764,15 +775,15 @@ color: #05fffb !important;
 
 .extra-images-credit {
     margin-top:0.7vw;
-    
+    padding: 5px!important;
     font-size:0.9vw;
     margin-bottom:0px;
-    background-color:darkcyan;
 }
 
 .extra-images-note {
-    background-color:darkcyan;
     color:azure;
+    padding: 5px!important;
+    padding-bottom:8px!important;
 }
 
 

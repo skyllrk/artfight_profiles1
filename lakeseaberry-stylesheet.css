@@ -1,3 +1,10 @@
+body {
+    word-wrap: break-word!important;
+}
+
+
+
+
 /*background*/
     #wrapper {
 background-color: #002929 !important;
@@ -638,14 +645,14 @@ color: #05fffb !important;
 }
 
 .character-description .bg-light {
-    background-color: #fc034e!important; 
+    background-color: #184869!important; 
     margin-left: 0.8rem!important;
     margin-right: 0.8rem!important;
 
 }
 
 .character-description .card-header {
-     background-color: #fc034e!important; 
+     
     font-weight:bold;
     color:cyan!important;
     text-align:center;
@@ -667,13 +674,25 @@ color: #05fffb !important;
     padding-bottom:0px !important;
 }
 
-/*
-#user_personality .row {
-    background-color:#fc034e!important; 
-    border-radius:5px!important;
-    padding:5px;
-} */
 
+#user_personality .row .col-md-3 {
+     background-color:#184869!important; 
+    border-radius:10px!important;
+    padding-top:0.7rem !important;
+    padding-bottom:0.7rem !important;
+    border:6px solid black;
+}
+
+#user_personality .border-secondary {
+    border:none!important;
+}
+
+#user_skills .row {
+    background-color:#184869!important; 
+     border-radius:10px!important;
+    padding-top:0.7rem !important;
+    padding-bottom:0.7rem !important;
+}
 #user_skills .mb-3 {
     margin-top:auto!important;
     padding-top:0.5rem !important;

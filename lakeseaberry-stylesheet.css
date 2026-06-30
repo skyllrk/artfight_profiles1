@@ -373,9 +373,9 @@ font-size: 1rem;
     color: #c5264c !important;
 }
 
-
-#profile-side-images img {
-    width:13em;
+.descwindow-stamps img {
+    margin-top:0.25vw;
+    margin-bottom:0.25vw;
 }
 
 #profile-side-images {
@@ -923,6 +923,9 @@ color: #05fffb !important;
     color: #2f4f4f;
 }
 
+.descwindow-doll .windows-panel-content {
+    background-color: #dbeaec !important;
+}
 
 .chr-table td {
     text-transform: uppercase;

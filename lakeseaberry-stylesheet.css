@@ -601,8 +601,6 @@ color: #05fffb !important;
 }
 /* single character page */
 
-
-
 .profile-header-name i {
     color:cyan!important;
 }
@@ -611,11 +609,105 @@ color: #05fffb !important;
     background-color: #fc034e;
 }
 
+
+.nav-tabs .nav-link.active {
+    background-color:#fc034e!important; 
+}
+
 .character-description {
-    background-color:black !important;
+    background-color:none !important;
     margin-left, margin-right: 0px !important;
+    border:1rem solid black;
     width: 100% !important;
-    padding:0.5rem;
+    padding:0px;
+    border-radius:5px!important;
+    border-bottom:2rem solid black!important;
+}
+
+.character-description .mb-3 {
+    padding:0px!important;
+    margin-bottom:0px !important;
+}
+
+.character-description .text-md-right {
+   background-color:black!important
+}
+
+.character-description .h-100 .flex-column {
+    background-color:black;
+}
+
+.character-description .bg-light {
+    background-color: #fc034e!important; 
+    margin-left: 0.8rem!important;
+    margin-right: 0.8rem!important;
+
+}
+
+.character-description .card-header {
+     background-color: #fc034e!important; 
+    font-weight:bold;
+    color:cyan!important;
+    text-align:center;
+}
+
+.character-description .card-title {
+    color:cyan !important;
+    font-weight:bold;
+
+}
+
+#user_appearance  .row {
+    margin-top:1rem!important;
+    padding-bottom:1rem !important;
+}
+
+#user_appearance .bg-light  .row {
+    margin-top:0px!important;
+    padding-bottom:0px !important;
+}
+
+#user_personality .row {
+    background-color:#fc034e!important; 
+    border-radius:5px!important;
+    padding:5px;
+}
+#user_skills .mb-3 {
+    margin-top:auto!important;
+    padding-top:0.5rem !important;
+}
+.character-description .card-subtitle {
+    margin-top:auto!important;
+    margin-bottom:auto;
+}
+
+#user-appearance .card-body {
+    margin-bottom:5px!important;
+}
+
+#character-content .character-description .col .card {
+    background-color: transparent;
+    border:1rem solid black;
+    margin:0px!important;
+    border-radius:0px!important;
+}
+
+#character-content .character-description .mb-2 .card {
+    border:none!important;
+    margin:0px!important;
+    border-radius:5px!important;
+    color:white!important;
+}
+
+
+.character-description .h-100 .card-body {
+    background-image: none!important;
+    background-color:transparent!important;
+}
+
+.character-description .h-100 .card .flex-column {
+    background-image: none!important;
+    background-color:black!important;
 }
 
 .character-profile-panel {

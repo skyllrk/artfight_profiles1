@@ -381,9 +381,7 @@ font-size: 1rem;
 #profile-side-images {
     display:flex;
     flex-direction:column;
-    justify-content: center;
     margin-right:0px;
-    align-self:flex-start;
 }
 
 
